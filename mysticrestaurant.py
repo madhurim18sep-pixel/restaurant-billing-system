@@ -1,4 +1,3 @@
-import qrcode
 import tkinter as tk
 from tkinter import ttk
 from tkinter import*
@@ -7,7 +6,6 @@ import random
 from datetime import date
 from datetime import datetime
 
-data="""
 prices = {"Chickenbiryani" : 210,
               "Kadaipaneer" : 120,
               "Butterchicken" : 250,
@@ -572,8 +570,4 @@ orderFrame.columnconfigure(0, weight = 1)
 orderFrame.rowconfigure(2, weight = 1)
 
 
-root.mainloop()"""
-
-img=qrcode.make(data)
-img.save("my_qrcode.png")
-print("QR Code generated successfully as 'my_qrcode.png' !")
+root.mainloop()
