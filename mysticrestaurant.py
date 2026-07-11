@@ -358,43 +358,43 @@ s.configure('orderTransaction.TLabel',
             anchor = "nw",
             padding = (3, 3, 3, 3))
 
-LogoImageObject = Image.open("../cs/logo.jpg").resize((220, 150))
+LogoImageObject = Image.open("logo.jpg").resize((220, 150))
 LogoImage = ImageTk.PhotoImage(LogoImageObject)
 
-TopBannerImageObject = Image.open("../cs/topbanner.jpg").resize((1300, 150))
+TopBannerImageObject = Image.open("topbanner.jpg").resize((1300, 150))
 TopBannerImage = ImageTk.PhotoImage(TopBannerImageObject)
 
-displayDefaultImageObject = Image.open("../cs/displaydefault.jpg").resize((580,570))
+displayDefaultImageObject = Image.open("displaydefault.jpg").resize((580,570))
 displayDefaultImage = ImageTk.PhotoImage(displayDefaultImageObject)
 
-ChickenbiryaniImageObject = Image.open("../cs/chickenbiryani.jpg").resize((580,540))
+ChickenbiryaniImageObject = Image.open("chickenbiryani.jpg").resize((580,540))
 ChickenbiryaniImage = ImageTk.PhotoImage(ChickenbiryaniImageObject)
 
-KadaipaneerImageObject = Image.open("../cs/kadaipaneer.jpg").resize((580,540))
+KadaipaneerImageObject = Image.open("kadaipaneer.jpg").resize((580,540))
 KadaipaneerImage = ImageTk.PhotoImage(KadaipaneerImageObject)
 
-ButterchickenImageObject = Image.open("../cs/butterchicken.jpg").resize((580,540))
+ButterchickenImageObject = Image.open("butterchicken.jpg").resize((580,540))
 ButterchickenImage = ImageTk.PhotoImage(ButterchickenImageObject)
 
-RumalirotiImageObject = Image.open("../cs/rumaliroti.jpg").resize((580,540))
+RumalirotiImageObject = Image.open("rumaliroti.jpg").resize((580,540))
 RumalirotiImage = ImageTk.PhotoImage(RumalirotiImageObject)
 
-NaanImageObject = Image.open("../cs/naan.jpg").resize((580,540))
+NaanImageObject = Image.open("naan.jpg").resize((580,540))
 NaanImage = ImageTk.PhotoImage(NaanImageObject)
 
-MomosImageObject = Image.open("../cs/momos.jpg").resize((580,540))
+MomosImageObject = Image.open("momos.jpg").resize((580,540))
 MomosImage = ImageTk.PhotoImage(MomosImageObject)
 
-FrenchfriesImageObject = Image.open("../cs/frenchfries.jpg").resize((580,540))
+FrenchfriesImageObject = Image.open("frenchfries.jpg").resize((580,540))
 FrenchfriesImage = ImageTk.PhotoImage(FrenchfriesImageObject)
 
-NoodlesImageObject = Image.open("../cs/noodles.jpg").resize((580,540))
+NoodlesImageObject = Image.open("noodles.jpg").resize((580,540))
 NoodlesImage = ImageTk.PhotoImage(NoodlesImageObject)
 
-VegburgerImageObject = Image.open("../cs/vegburger.jpg").resize((580,540))
+VegburgerImageObject = Image.open("vegburger.jpg").resize((580,540))
 VegburgerImage = ImageTk.PhotoImage(VegburgerImageObject)
 
-BurritoImageObject = Image.open("../cs/burrito.jpg").resize((580,540))
+BurritoImageObject = Image.open("burrito.jpg").resize((580,540))
 BurritoImage = ImageTk.PhotoImage(BurritoImageObject)
 
 
