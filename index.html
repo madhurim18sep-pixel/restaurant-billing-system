@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mystic Restaurant - Billing System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Top Banner -->
+        <div class="top-banner">
+            <div class="logo-section">
+                <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Logo" class="logo">
+            </div>
+            <div class="banner-section">
+                <img src="{{ url_for('static', filename='images/topbanner.jpg') }}" alt="Banner" class="banner">
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Menu Section -->
+            <div class="menu-section">
+                <h2 class="menu-title">MENU</h2>
+                <div class="menu-items" id="menuContainer">
+                    <!-- Menu items will be generated here -->
+                </div>
+            </div>
+
+            <!-- Display Section -->
+            <div class="display-section">
+                <div class="dish-display">
+                    <img id="dishImage" src="{{ url_for('static', filename='images/displaydefault.jpg') }}" alt="Dish Display">
+                    <h3 id="dishName">Select a dish</h3>
+                </div>
+                <div class="display-buttons">
+                    <button class="btn btn-add" onclick="addToOrder()">ADD TO ORDER</button>
+                    <button class="btn btn-remove" onclick="removeFromOrder()">REMOVE</button>
+                </div>
+            </div>
+
+            <!-- Order Section -->
+            <div class="order-section">
+                <h2 class="order-title">ORDER</h2>
+                <div class="order-id">ORDER ID: <span id="orderID">{{ order_id }}</span></div>
+                
+                <div class="order-items-container">
+                    <div class="order-items" id="orderItems"></div>
+                </div>
+                
+                <div class="order-summary">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Discount (10%):</span>
+                        <span id="discount">-$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>GST (18%):</span>
+                        <span id="gst">+$0.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>TOTAL:</span>
+                        <span id="total">$0.00</span>
+                    </div>
+                </div>
+                
+                <button class="btn btn-order" onclick="placeOrder()">PLACE ORDER</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Receipt Modal -->
+    <div id="receiptModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Receipt Generated</h2>
+            <div id="receiptContent" class="receipt-text"></div>
+            <button class="btn btn-close-modal" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
